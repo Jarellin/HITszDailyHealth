@@ -2,7 +2,7 @@ name: Auto Report
 
 on:
   schedule:
-    - cron: "0 1 * * *"
+    - cron: "0 7 * * *"
   workflow_dispatch:
 
 jobs:
@@ -25,4 +25,9 @@ jobs:
       env:
         user_id: ${{ secrets.USER_ID }}
         password: ${{ secrets.PASSWORD }}
+      run: "python -u main.py"
+    - name: Report
+      env:
+        user_id: ${{ secrets.USER_ID2 }}
+        password: ${{ secrets.PASSWORD2 }}
       run: "python -u main.py"
