@@ -5,28 +5,8 @@
 > 免责声明：本脚本仅为个人为学习python之目的所编写，使用该脚本造成的一切后果均由使用者承担。
 本人仍然提倡每日按时手动进行疫情上报与入校申请，配合学校进行好疫情防控。
 
-## 使用方法(离线使用)
-### 1. git clone 本仓库 
-### 2. 下载WebDriver
-
-ubuntu 下
-```bash
-sudo apt-get install chromium-browser
-```
-
-随后去[chrome-driver](https://chromedriver.chromium.org/downloads)下载对应的chromedriver到该文件夹下
-
-### 3. 下载python依赖
-pip3 install -r requrements.txt
-
-### 4. 配置脚本&运行
-将config-example.json文件修改为config.json，并填上自己信息门户的学号与密码
-随后
-``` python3
-python main.py
-```
-## 5. 自动化(增加多人功能，可以参考.github/workflows/report.yaml 24行到33行)
-目前是24行到28行是一个人，29行到33行是第二个人。如果是个人使用，请删除29行到33行，同理多人，请自行增加即可
+## 自动化(增加多人功能，可以参考.github/workflows/report.yaml 24行到33行)
+### 目前是24行到28行是一个人，29行到33行是第二个人。如果是个人使用，请删除29行到33行，同理多人，请自行增加即可
 
 自动化部分参照[github repo 上海大学健康之路每日一报/每日两报自动打卡](https://github.com/BlueFisher/SHU-selfreport)
 感谢作者
@@ -49,3 +29,23 @@ python main.py
 
     如果需要对报送功能进行测试，可以点击 run workflow 按钮，立即进行一次运行。
     ![secrets](./resources/run_workflow.png)
+## 使用方法(离线使用)
+### 1. git clone 本仓库 
+### 2. 下载WebDriver
+
+ubuntu 下
+```bash
+sudo apt-get install chromium-browser
+```
+
+随后去[chrome-driver](https://chromedriver.chromium.org/downloads)下载对应的chromedriver到该文件夹下
+
+### 3. 下载python依赖
+pip3 install -r requrements.txt
+
+### 4. 配置脚本&运行
+将config-example.json文件修改为config.json，并填上自己信息门户的学号与密码
+随后
+``` python3
+python main.py
+```
