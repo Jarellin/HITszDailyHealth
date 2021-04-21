@@ -25,7 +25,8 @@ pip3 install -r requrements.txt
 ``` python3
 python main.py
 ```
-## 5. 自动化
+## 5. 自动化(增加多人功能，可以参考.github/workflows/report.yaml 24行到33行)
+目前是24行到28行是一个人，29行到33行是第二个人。如果是个人使用，请删除29行到33行，同理多人，请自行增加即可
 
 自动化部分参照[github repo 上海大学健康之路每日一报/每日两报自动打卡](https://github.com/BlueFisher/SHU-selfreport)
 感谢作者
