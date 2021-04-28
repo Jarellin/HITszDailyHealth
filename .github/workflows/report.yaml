@@ -41,3 +41,8 @@ jobs:
         user_id: ${{ secrets.USER_ID4 }}
         password: ${{ secrets.PASSWORD4 }}
       run: "python -u main.py"
+    - name: Report
+      env:
+        user_id: ${{ secrets.USER_ID5 }}
+        password: ${{ secrets.PASSWORD5 }}
+      run: "python -u main.py"
