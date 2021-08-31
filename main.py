@@ -67,7 +67,7 @@ def check_todays_report():
     time.sleep(1)
     items = driver.find_elements_by_class_name("content_title")
     print ("发现%d条上报记录"%len(items))
-    item_newest = items[1]
+    item_newest = items[0]
     year_str = item_newest.text[5:9]
     month_str = item_newest.text[10:12]
     day_str = item_newest.text[-2:]
